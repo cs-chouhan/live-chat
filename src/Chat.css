@@ -1,0 +1,120 @@
+/* Overall page styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light background */
+}
+
+/* Chat popup styles */
+.chat-popup {
+    width: 400px; /* Set width of chat popup */
+    background-color: white; /* Popup background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Header styles */
+.chat-header {
+    padding: 10px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white; /* White text */
+    display: flex;
+    justify-content: space-between; /* Space between title and close button */
+    align-items: center; /* Center items vertically */
+}
+
+/* Username input styles */
+.username-input {
+    padding: 10px;
+}
+
+/* Chat messages container */
+.chat-messages {
+    height: 300px; /* Fixed height */
+    overflow-y: auto; /* Scrollable */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light grey for messages */
+}
+
+/* Message styles */
+.my-message {
+    text-align: right; /* Align messages to the right */
+    margin: 5px 0;
+}
+
+.other-message {
+    text-align: left; /* Align messages to the left */
+    margin: 5px 0;
+}
+
+/* Input container styles */
+.input-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    border-top: 1px solid #eaeaea; /* Top border */
+}
+
+/* Input field styles */
+.input-container input {
+    flex: 1; /* Take available space */
+    padding: 10px;
+    border: 1px solid #eaeaea; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and buttons */
+}
+
+/* Button styles */
+.input-container button,
+.input-container .icon-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    margin-left: 5px; /* Space between buttons */
+    display: flex;
+    align-items: center; /* Center icons vertically */
+}
+
+/* Button hover effect */
+.input-container button:hover,
+.input-container .icon-button:hover {
+    background-color: #1ebc5b; /* Darker green on hover */
+}
+
+/* Emoji icon styles */
+.emoji-icon,
+.pin-icon {
+    cursor: pointer; /* Pointer on hover */
+    margin-left: 10px; /* Space between icons */
+}
+
+/* Video call styles */
+.video-call {
+    position: fixed; /* Fix position */
+    bottom: 20px; /* Space from bottom */
+    right: 20px; /* Space from right */
+    width: 300px; /* Fixed width for video */
+    height: 200px; /* Fixed height for video */
+    display: flex;
+    justify-content: space-between; /* Space between local and remote video */
+}
+
+.video-call video {
+    width: 48%; /* Take up half of the width */
+    border: 1px solid #eaeaea; /* Border for video */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Icon button styles */
+.icon-button {
+    padding: 8px; /* Smaller padding for icon buttons */
+}
